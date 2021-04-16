@@ -2,5 +2,5 @@
 # Usage
 Paste `browserlist` folder to `%USER_HOME%.,vscode/extensions`
 
-#Example
+# Example
 ![vs-code-ext1](/docs/example.jpg)
