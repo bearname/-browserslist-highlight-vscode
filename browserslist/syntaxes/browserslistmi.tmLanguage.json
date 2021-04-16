@@ -1,0 +1,103 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "browserlist",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#browsers"
+		},
+		{
+			"include": "#header"
+		},
+		{
+			"include": "#percents"
+		},
+		{
+			"include": "#version"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#rare-query"
+		},
+		{
+			"include": "#county-code"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign.browserslistmi",
+				"begin": "#",
+				"end": "\\n"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.other.browserslistmi",
+				"match": "(>=|<=|<|>|cover|in)"
+			},
+			{
+				"name": "keyword.other.unit",
+				"match": "(not dead)"
+			},
+			{
+				"name": "invalid.deprecated.browserslistmi",
+				"match": "\\b(dead )\\b"
+			},
+			{
+				"name": "keyword.other.browserslistmi",
+				"match": "\\b(not|and|or|extends?|,)\\b"
+			}]
+		},
+		"browsers": {
+			"patterns": [{
+				"name": "invalid.deprecated",
+				"match": "(IE 10|IE_Mob 11|BlackBerry 10|BlackBerry 7|Samsung 4|OperaMobile 12.1)"
+			},
+			{
+				"name": "entity.other.inherited-class.browserslistmi",
+				"match": "\\b((last 2 )|(unreleased ))?(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|ie|IE|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|IOS|ios_saf|Node|Opera|OperaMini|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)\\b( versions)?"
+			},
+			{
+				"name": "entity.name.function.browserslistmi",
+				"match": "\\b(ESR|TP|all|major)\\b"
+			}]
+		},
+		"rare-query":{
+			"patterns": [{
+				"name": "variable.name.browserslistmi",
+				"match": "\\b(maintained|supports|dead)\\b"
+			}]
+		},
+		"percents": {
+			"patterns": [{
+				"name": "entity.name.function.browserslistmi",
+				"match": "\\d+(.\\d+)?%"
+			}]
+		},
+		"header": {
+			"patterns": [{
+				"name": "string.interpolated.browserslistmi",
+				"match": "(\\[)(.+)(\\])"
+			}]
+		},
+		"version": {
+			"patterns": [{
+				"name": "constant.numeric.browserslistmi",
+				"match": "\\b\\d+(.\\d+){0,2}\\b"
+			}]
+		},
+		"county-code": {
+			"patterns": [{
+				"name": "constant.character.escape",
+				"match": "(AD|AE|AF|AG|AI|AL|AM|AO|AQ|AR|AS|AT|AU|AW|AX|AZ|BA|BB|BD|BE|BF|BG|BH|BI|BJ|BL|BM|BN|BO|BQ|BQ|BR|BS|BT|BV|BW|BY|BZ|CA|CC|CD|CF|CG|CH|CI|CK|CL|CM|CN|CO|CR|CU|CV|CW|CX|CY|CZ|DE|DJ|DK|DM|DO|DZ|EC|EE|EG|EH|ER|ES|ET|FI|FJ|FK|FM|FO|FR|GA|GB|GD|GE|GF|GG|GH|GI|GL|GM|GN|GP|GQ|GR|GS|GT|GU|GW|GY|HK|HM|HN|HR|HT|HU|ID|IE|IL|IM|IN|IO|IQ|IR|IS|IT|JE|JM|JO|JP|KE|KG|KH|KI|KM|KN|KP|KR|KW|KY|KZ|LA|LB|LC|LI|LK|LR|LS|LT|LU|LV|LY|MA|MC|MD|ME|MF|MG|MH|MK|ML|MM|MN|MO|MP|MQ|MR|MS|MT|MU|MV|MW|MX|MY|MZ|NA|NC|NE|NF|NG|NI|NL|NO|NP|NR|NU|NZ|OM|PA|PE|PF|PG|PH|PK|PL|PM|PN|PR|PS|PT|PW|PY|QA|RE|RO|RS|RU|RW|SA|SB|SC|SD|SE|SG|SH|SI|SJ|SK|SL|SM|SN|SO|SR|SS|ST|SV|SX|SY|SZ|TC|TD|TF|TG|TH|TJ|TK|TL|TM|TN|TO|TR|TT|TV|TW|TZ|UA|UG|UM|US|UY|UZ|VA|VC|VE|VG|VI|VN|VU|WF|WS|YE|YT|ZA|ZM|ZW|alt-AF|alt-AF|alt-AS|alt-EU|alt-NA|alt-OC|alt-SA|alt-WW)"
+			}]
+		}
+	
+	},
+	"scopeName": "source.browserslistrc"
+}

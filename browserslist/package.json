@@ -1,0 +1,25 @@
+{
+    "name": "browserslist",
+    "displayName": "browserslist",
+    "description": "highlight browserslist",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "browserslistmi",
+            "aliases": ["browserlist", "browserslistmi"],
+            "extensions": [".browserslistrc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "browserslistmi",
+            "scopeName": "source.browserslistrc",
+            "path": "./syntaxes/browserslistmi.tmLanguage.json"
+        }]
+    }
+}
