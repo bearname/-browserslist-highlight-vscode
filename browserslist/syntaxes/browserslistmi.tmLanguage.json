@@ -3,6 +3,9 @@
 	"name": "browserlist",
 	"patterns": [
 		{
+			"include": "#date"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -33,6 +36,12 @@
 				"name": "comment.line.number-sign.browserslistmi",
 				"begin": "#",
 				"end": "\\n"
+			}]
+		},
+		"date": {
+			"patterns": [{
+				"name": "constant.character.escape.browserslistmi",
+				"match": "((since )((\\d{4})(-\\d{2})?(-\\d{2})?))"
 			}]
 		},
 		"keywords": {
