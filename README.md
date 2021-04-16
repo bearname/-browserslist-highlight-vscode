@@ -1,5 +1,5 @@
 # -browserslist-highlight-vscode
-#Usage
+# Usage
 Paste `browserlist` folder to `%USER_HOME%.,vscode/extensions`
 
 #Example
